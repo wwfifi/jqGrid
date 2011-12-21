@@ -348,7 +348,7 @@ $.jgrid.extend({
 			if (!$t.grid || $t.p.cellEdit !== true ) {return;}
 			// trick to process keydown on non input elements
 			$t.p.knv = $t.p.id + "_kn";
-			var selection = $("<span style='width:0px;height:0px;background-color:black;' tabindex='0'><span tabindex='-1' style='width:0px;height:0px;background-color:grey' id='"+$t.p.knv+"'></span></span>"),
+			var selection = $("<span style='background-color:black;' tabindex='0'><span tabindex='-1' style='background-color:grey' id='"+$t.p.knv+"'></span></span>"),
 			i, kdir;
 			$(selection).insertBefore($t.grid.cDiv);
 			$("#"+$t.p.knv)
